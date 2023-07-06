@@ -119,10 +119,16 @@ nav {
   padding: 10px;
 }
 
+
+.menu:hover ~ .menu i { color: white;}
 .menu a:hover {
   border-radius: 0;
-  background-color: rgb(99, 124, 130);
-  color: rgb(255, 255, 255);
+  background-color: rgba(127, 129, 129, 0.674);
+  color: white;
+  
+}
+.menu a{
+  width:112px;
 }
 .mobileNav {
   display: block;

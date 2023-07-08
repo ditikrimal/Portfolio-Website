@@ -28,6 +28,7 @@ toggle_btn_out.forEach((btn) => {
     main.classList.toggle("sign-up-mode");
   });
 });
+const body = document.querySelector(".body");
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const mblMenu = document.querySelector(".mobileNav");
@@ -35,4 +36,5 @@ hamburger.addEventListener("click", function () {
   this.classList.toggle("is-active");
   bgImg.classList.toggle("bgimg-navActive");
   mblMenu.classList.toggle("is-active");
+  hamburger.classList.toggle("span");
 });

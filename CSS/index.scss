@@ -36,7 +36,7 @@ body {
 }
 
 .header .logoText {
-  font-size: 26px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -118,7 +118,7 @@ transition: 0.3s;
   scale: 1.06;
 }
 .mainContent{
-
+  height: 105vh;
   margin-top: -100px;
   gap: 25rem;
   display: flex;
@@ -213,7 +213,10 @@ transition: 0.3s;
   box-shadow:0 0 13px #bdbdbd;
 }
 
-
+.section-services{
+  background-color: red;
+  height: 100%;
+}
 
 /* ====================KeyFrames==================== */
 
@@ -291,7 +294,7 @@ opacity: 0;
 .mainContent{
   display: grid;
   gap: 0rem;
-  margin-top: 150px;
+  margin-top: -250px;
 }
 .socials{
   font-size: 18px;
@@ -319,8 +322,8 @@ display: none;
   .navbar {
     /* display: none; */
     width: 80%;
-    height: 100vh;
-    background: #1f1f1fc0;
+    height: 80vh;
+    background: #1c1c1cdf;
     position: absolute;
     top: 0;
     right: 0;
@@ -338,6 +341,7 @@ display: none;
   }
 
   .navbar-list {
+    margin-top: -80px;
     flex-direction: column;
     align-items: center;
   }

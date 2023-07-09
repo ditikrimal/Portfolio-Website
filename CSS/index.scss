@@ -562,12 +562,11 @@ opacity: 0;
     flex-direction: column;
     align-items: center;
     transition: 2s;
-    transform: translateY();
 
   }
 
   .active .navbar {
-    transform: translateY(0);
+    transform: translate(0);
     background-color: rgba(0, 0, 0, 0.848);
     opacity: 1;
     visibility: visible;

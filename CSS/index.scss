@@ -28,6 +28,7 @@ body {
 
 .header {
   padding: 0 2.8rem;
+
   height: 7rem;
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,6 @@ body {
 
 .navbar-list {
   display: flex;
- 
   gap: 5rem;
   margin-right: 20px;
   list-style: none;
@@ -472,7 +472,6 @@ opacity: 0;
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
-   
     color: blue;
   }
   .navbar-list li:nth-child(4){
@@ -537,8 +536,9 @@ opacity: 0;
   
   .navbar {
     /* display: none; */
-    width: 80%;
-    height: 80vh;
+    
+    width: 100%;
+    height: 0vh;
     background: #1c1c1cdf;
     position: absolute;
     top: 0;
@@ -549,7 +549,7 @@ opacity: 0;
     align-items: center;
 
     /* to get the tranisition  */
-    transform: translateX(100%);
+    transform: translateY(-100%);
     transition: all 0.7s linear;
     opacity: 0;
     visibility: hidden;
@@ -557,16 +557,22 @@ opacity: 0;
   }
 
   .navbar-list {
-    margin-top: -80px;
+    margin-top: 20px;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
+    transition: 2s;
+    transform: translateY();
+
   }
 
   .active .navbar {
-    transform: translateX(0);
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.848);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    height: 30vh;
   }
 
   .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {

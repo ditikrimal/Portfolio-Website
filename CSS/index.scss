@@ -126,6 +126,15 @@ transition: 0.3s;
   align-items: center;
  
 }
+.myImg{
+  background-color: rgb(83, 143, 141);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
+-webkit-box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
+-moz-box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
+}
 .text{
 animation: slide;
   font-size: 34px;
@@ -160,7 +169,7 @@ animation: slide;
 }
 .mainContent img{
 height: 80vh;
-margin-top: 220px;
+margin-top: 0px;
 display: block;
 margin-right: 100px;
 animation: slideLeft 1s ;
@@ -272,7 +281,7 @@ Responsive Codes
 .socials{
   font-size: 18px;
 }
-.mainContent img{
+.myImg{
 display: none;
   }
   .cvBtn{

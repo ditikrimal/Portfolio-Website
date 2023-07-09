@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  animation: dropDown 0.7s;
   background-color: #e7f5ff00;
 }
 
@@ -199,6 +199,9 @@ transition: 0.3s;
   scale: 1.2;
   box-shadow:0 0 13px #bdbdbd;
 }
+
+
+
 @keyframes slideRight {
   0%{
     transform: translate(-200px);
@@ -216,6 +219,22 @@ opacity: 0;
 opacity: 0;
   }
 
+  100%{
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes dropDown {
+  0%{
+    transform: translateY(-200px);
+opacity: 0;
+
+  }
+50%{
+  transition: 1s;
+  transform: translateY(22px);
+  opacity: 0.5;
+}
   100%{
     transform: translate(0);
     opacity: 1;

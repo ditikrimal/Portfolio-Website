@@ -120,17 +120,22 @@ transition: 0.3s;
 .mainContent{
   padding: 9.6rem 0;
   height: 60vh;
+  margin-top: 50px;
   gap: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
  
 }
-.myImg{
+.imageElement{
+  position: absolute;
+  right: 220;
+  z-index: -1;
   background-color: rgb(83, 143, 141);
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  animation: 1s popUp;
   box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
 -webkit-box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
 -moz-box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
@@ -169,11 +174,11 @@ animation: slide;
 }
 .mainContent img{
 height: 80vh;
-margin-top: 0px;
+margin-top: 150px;
 display: block;
 margin-right: 100px;
 animation: slideLeft 1s ;
-
+ 
 }
 .socials{
   display: flex;
@@ -208,9 +213,16 @@ transition: 0.3s;
   scale: 1.2;
   box-shadow:0 0 13px #bdbdbd;
 }
+/* ====================KeyFrames==================== */
 
-
-
+@keyframes popUp {
+  0%{
+    scale: 0;
+  }
+  100%{
+    scale: 1;
+  }
+}
 @keyframes slideRight {
   0%{
     transform: translate(-200px);
@@ -249,9 +261,9 @@ opacity: 0;
     opacity: 1;
   }
 }
-/* ===========================================
-Responsive Codes 
-======================================= */
+
+
+/* ==============Responsive Codes ============= */
 
 /* 980px  */
 @media (max-width: 62em) {
@@ -281,7 +293,7 @@ Responsive Codes
 .socials{
   font-size: 18px;
 }
-.myImg{
+.myImg,.imageElement{
 display: none;
   }
   .cvBtn{

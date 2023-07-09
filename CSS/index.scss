@@ -240,19 +240,28 @@ transition: 0.3s;
 }
 textarea {
   resize: none;
-  padding: 7px 0 0 7px;
+
   height: 75px;
-  color: black;
-  background-color: rgb(255, 255, 255);
+  color: white;
+  background-color: rgba(33, 37, 41, 0.503);
+
   border: none;
   border-bottom: 2px solid rgb(0, 0, 0);
 
-  padding: 0 10px;
+  padding:7px;
   font-size: 15px;
   width: 47vh;
   outline: none;
 }
 .contactBox{
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
 
   transition: 0.3s;
   transform: translate(1000px);
@@ -268,7 +277,7 @@ textarea {
   margin-right: auto; 
   width: 60vh;
   height: 71vh;
-  background-color: rgb(255, 255, 255);
+ 
 }
 .contactBox.active{
   transform: translate(0);
@@ -276,6 +285,7 @@ textarea {
   opacity: 1;
 }
 .contactBox h1{
+  color: rgb(201, 201, 201);
   font-size:24px;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
@@ -330,8 +340,8 @@ textarea {
 }
 .contactBox form input{
   height: 40px;
-  color: black;
-  background-color: rgb(255, 255, 255);
+  color: white;
+  background-color: rgba(33, 37, 41, 0.503);
 
   border: none;
   border-bottom: 2px solid rgb(0, 0, 0);
@@ -347,12 +357,20 @@ textarea {
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  background-color: #52f871;
+  background-color: #374f55;
   font-size: 20px;
   height: 40px;
+  color: white;
  left: 0;
  right: 0;
+ transition: 0.5s;
  margin: auto;
+}
+.contactBox button:hover{
+  scale:1.1;
+  background-color: white;
+  color:black;
+  transition: 0.5s;
 }
 
 /* ====================KeyFrames==================== */

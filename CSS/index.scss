@@ -162,6 +162,8 @@ animation: slide;
 }
 .auto-type{
   letter-spacing: 1px;
+  display: block;
+ height: 45px;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 500;
@@ -170,6 +172,7 @@ animation: slide;
  
 }
 .textContent h4 span{
+  padding-top: 10px;
   font-weight: 800;
   text-transform: uppercase;
   color: rgb(30, 135, 149);

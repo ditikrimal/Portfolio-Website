@@ -122,39 +122,40 @@ transition: 0.3s;
   
 }
 .mainContent{
-  height: 105vh;
-  margin-top: -100px;
-  gap: 25rem;
+  height: auto;
+  padding: 60px 120px 0px;
+  gap: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
  
 }
 .imageElement{
-  position: absolute;
-  right: 232;
-  z-index: -1;
   background-color: rgb(83, 143, 141);
   width: 300px;
   height: 300px;
+  margin-top: 50px;
+  z-index: -1;
+  position: absolute;
   border-radius: 50%;
   animation: 1s popUp;
   box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
 -webkit-box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
 -moz-box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
 }
-.text{
+.textContent{
 animation: slide;
   font-size: 34px;
   color: #aeaeae;
+  flex-basis: 50%;
   
 }
-.text p{
+.textContent p{
   font-size: 18px;
   margin-top: 30px;
   animation: slideRight 1.4s ;
 }
-.text h4{
+.textContent h4{
   font-weight: 200;
   margin-top: -10px;
   animation: slideRight 1s ;
@@ -168,7 +169,7 @@ animation: slide;
   font-family: 'Kalam', cursive;
  
 }
-.text h4 span{
+.textContent h4 span{
   font-weight: 800;
   text-transform: uppercase;
   color: rgb(30, 135, 149);
@@ -177,11 +178,19 @@ animation: slide;
 }
 .mainContent img{
 height: 80vh;
-margin-top: 150px;
+
 display: block;
-margin-right: 100px;
+
 animation: slideLeft 1s ;
  
+}
+.imageContent{
+  flex-basis: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 .socials{
   display: flex;
@@ -477,36 +486,50 @@ opacity: 0;
   .header .logo {
     width: 40%;
   }
+  .gitBtn{
+    margin: 0;
+  }
+  .buttons{
+    display: grid;
+    gap: 10px;
+  }
 .mainContent{
   display: grid;
   gap: 0rem;
-  margin-top: -250px;
+  padding-top: 20px;
+  padding: 20px;
 }
 .socials{
   font-size: 18px;
 }
-.myImg,.imageElement{
-display: none;
-  }
+.imageContent{
+  height: auto;
+  padding-top: 0;
+}
+.imageElement{
+  height: 200px;
+  width: 200px;
+}
+.myImg{
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.mainContent img
+{
+  height: 40vh;
+}
+  
   .cvBtn{
     padding: 7px 13px;
     font-size: 15px;
   }
-  .text{
-    margin-left: 10px;
-    margin-top: -100px;
+  .textContent{
+    font-size: 200%;
   }
-  .text p {
-    margin-top: 10px;
-    font-size: 11px;
-  }
-  .text h4 {
-    margin-top: 0px;
-    font-size: 20px;
-  }
-  .auto-type{
-    font-size: 20px;
-  }
+  
   .navbar {
     /* display: none; */
     width: 80%;

@@ -4,13 +4,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
   font-family: "Work Sans", sans-serif;
 }
 
 html {
   font-size: 62.5%;
+
   /* 1rem = 10px */
-  overflow-x: hidden;
 }
 
 body {
@@ -32,10 +34,14 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+.navbar-list li:nth-child(4){
+  display: none;
+}
 
 .navbar-list {
   display: flex;
-  gap: 3rem;
+  
+  gap: 5rem;
   margin-right: 20px;
   list-style: none;
 
@@ -49,17 +55,23 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
-  padding: 10 8px;
+  padding: 10px 10px 10px 12px;
   transition: all 0.3s;
-  border-bottom: solid 2px red;
+  border-bottom: solid 2px rgb(72, 72, 72);
 }
 
 .navbar-link:hover,
 .navbar-link:active {
-  color: #8f8f8f;
-  border-radius: 10px;
+  color: #aeaeae;
+  border-radius: 6px;
+ 
 }
-
+.navbar-link::after{
+  content: '';
+  width: 100%;
+  
+  color: red;
+}
 .mobile-navbar-btn {
   display: none;
   background: transparent;
@@ -69,32 +81,45 @@ body {
 .mobile-nav-icon {
   width: 4rem;
   height: 4rem;
-  color: #212529;
+  color: #ffffff;
+
 }
 
 .mobile-nav-icon[name="close-outline"] {
   display: none;
 }
+.contactBtn{
+  list-style-type: none;
+}
+.contactBtn a{
+  list-style-type: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(211, 23, 23);
+  padding: 6px 15px 7px 15px;
+  border-radius: 30px;
+margin-right: 5px;
+}
 
-/* ===========================================
-Hero and Service Section Start
-======================================= */
-.section-hero,
-.section-services {
+.mainContent{
   padding: 9.6rem 0;
-
   height: 60vh;
-
+  gap: 60rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-.section-hero p,
-.section-services p {
-  font-size: 3.2rem;
+.text{
+  font-size: 25px;
+  color: #aeaeae;
 }
+.mainContent img{
+height: 80vh;
+margin-top: 220px;
+}
+
 
 /* ===========================================
 Responsive Codes 
@@ -105,10 +130,15 @@ Responsive Codes
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
-    border: 3px solid blue;
+   
     color: blue;
   }
-
+  .navbar-list li:nth-child(4){
+    display:contents;
+  }
+  .contactBtn {
+  display: none;
+  }
   .header {
     position: relative;
   }
@@ -116,15 +146,21 @@ Responsive Codes
   .header .logo {
     width: 40%;
   }
-
+.mainContent{
+  display: grid;
+  gap: 0rem;
+}
+.mainContent img{
+  height: 70vh;
+  }
   .navbar {
     /* display: none; */
-    width: 100%;
+    width: 80%;
     height: 100vh;
-    background: #e7f5ff;
+    background: #1f1f1fc0;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 
     display: flex;
     justify-content: center;
@@ -132,8 +168,7 @@ Responsive Codes
 
     /* to get the tranisition  */
     transform: translateX(100%);
-    transition: all 0.5s linear;
-
+    transition: all 0.7s linear;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -162,6 +197,7 @@ Responsive Codes
 
 /* Below 560px  */
 @media (max-width: 35em) {
+
   .header {
     padding: 0 2.4rem;
   }

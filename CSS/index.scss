@@ -26,6 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background-color: #e7f5ff00;
 }
 
@@ -51,6 +52,7 @@ body {
 .navbar-link:visited {
   display: inline-block;
   text-transform: uppercase;
+  
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 1.5rem;
@@ -119,12 +121,13 @@ transition: 0.3s;
   align-items: center;
 }
 .text{
-  font-size: 25px;
+  font-size: 20px;
   color: #aeaeae;
 }
 .mainContent img{
 height: 80vh;
 margin-top: 220px;
+display: block;
 }
 
 

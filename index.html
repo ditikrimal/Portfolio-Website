@@ -45,7 +45,10 @@
         <main>
             <section class="mainContent">
                 <div class="text">
-                    Hey There, Welcome to my website.
+                    <h3>
+                        <span class="auto-type"></span>
+                        , Welcome to my website.
+                    </h3>
                 </div>
                 <div class="myImg">
                     <img src="BgImg.png" alt="" srcset="">
@@ -55,6 +58,15 @@
         <section class="section-services"></section>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script src="JS/main.js"></script>
+        <script>
+            var typed = new Typed(".auto-type",{
+        strings: ["Hello" ,"Bonjour","Zdravstvuyte","Nǐn hǎo","Salve","Konnichiwa","Olá","Namaste","Shalom","Hola"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+            });
+        </script>
     </body>
 </html>

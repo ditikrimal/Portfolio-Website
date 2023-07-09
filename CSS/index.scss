@@ -152,8 +152,19 @@ height: 80vh;
 margin-top: 220px;
 display: block;
 margin-right: 100px;
-}
 
+}
+.socials{
+  display: flex;
+  gap: 20px;
+  margin-top: 16px;
+  font-size: 26px;
+}
+.socials i:hover{
+transform: rotate(360deg);
+
+transition: 0.3s;
+}
 
 /* ===========================================
 Responsive Codes 

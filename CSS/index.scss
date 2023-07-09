@@ -219,7 +219,7 @@ transition: 0.3s;
   font-size: 19px;
   cursor: pointer;
   padding: 7px 23px;
-  font-weight: 500;
+  font-weight: 5 00;
   border: none;
   text-transform: uppercase;
   border-radius: 20px;
@@ -575,6 +575,25 @@ opacity: 0;
 
   .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
     display: none;
+  }
+  .aboutSection{
+    padding: 40px 40px;
+  }
+  .aboutRow{
+    display: grid;
+    gap: 20px;
+  }
+  .about-col-1{
+    display: flex;
+    justify-content: center;
+  }
+  .about-col-2{
+    display: grid;
+    justify-content: left;
+  }
+  .about-col-1 img{
+    width: 100%;
+    border-radius: 30px;
   }
 }
 

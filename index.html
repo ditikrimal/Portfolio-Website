@@ -38,7 +38,9 @@
             <div class="contactBtn">
                 <ul>
                     <li>
-                        <a href="#">Contact</a>
+                        <button href="#">
+                            Contact
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -74,6 +76,11 @@
                     </div>
                     <button class="cvBtn">
                         Get my cv
+                        <i style="font-size: 18px;" class="fa-regular fa-file"></i>
+                    </button>
+                    <button class="gitBtn">
+                        Visit Git
+                        <i style="font-size: 18px;" class="fa-brands fa-github"></i>
                     </button>
                 </div>
                 <div class="imageElement"></div>
@@ -82,8 +89,25 @@
                 </div>
             </section>
         </main>
-        <section class="section-services">
-            <h1>Hello World</h1>
+        <section class="contactBox">
+            <div class="closeBtnDiv">
+                <span class="closeBtn"></span>
+                <span class="closeBtn2"></span>
+            </div>
+            <h1>Contact Me</h1>
+            <form action="">
+                <input placeholder="Full Name" name="fullName" type="text">
+                <input placeholder="Email" name="email" type="email">
+                <textarea
+                    placeholder="Your Message"
+                    resize="none"
+                    name="message"
+                    id=""
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <button>Send</button>
+            </form>
         </section>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

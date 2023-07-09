@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 * {
   padding: 0;
@@ -100,7 +101,8 @@ body {
   list-style-type: none;
   transition: 0.3s; 
 }
-.contactBtn a{
+.contactBtn button{
+  border: none;
   list-style-type: none;
   font-size: 17px;
   text-transform: uppercase;
@@ -112,10 +114,12 @@ body {
 margin-right: 5px;
 transition: 0.3s;
 }
-.contactBtn:hover, .contactBtn a:hover{
-  
+.contactBtn button:hover{
+  cursor: pointer;
   color: white;
   scale: 1.06;
+  box-shadow: 0 0 12px rgb(170, 170, 170);
+  
 }
 .mainContent{
   height: 105vh;
@@ -193,7 +197,7 @@ transition: 0.3s;
 }
 .cvBtn{
   margin-top: 30px;
-  font-size: 21px;
+  font-size: 19px;
   text-transform: uppercase;
   cursor: pointer;
   padding: 7px 23px;
@@ -209,13 +213,146 @@ transition: 0.3s;
  
  color: black;
   transition: 0.5s;
-  scale: 1.2;
+  scale: 1.1;
   box-shadow:0 0 13px #bdbdbd;
 }
+.gitBtn{
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 19px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 7px 23px;
+  font-weight: 500;
+  border-radius: 19px;
+  background-color: rgb(18, 18, 18);
+  border: none;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  animation: slideRight 2.2s ;
+}
+.gitBtn:hover{
+ 
 
-.section-services{
-  background-color: red;
-  height: 100%;
+  transition: 0.5s;
+  scale: 1.1;
+  box-shadow:0 0 13px #bdbdbd;
+}
+textarea {
+  resize: none;
+  padding: 7px 0 0 7px;
+  height: 75px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+
+  padding: 0 10px;
+  font-size: 15px;
+  width: 47vh;
+  outline: none;
+}
+.contactBox{
+
+  transition: 0.3s;
+  transform: translate(1000px);
+  opacity: 0;
+  position: absolute; 
+  text-align: center;
+  padding-top: 40px;
+  top: 140;
+  border-radius: 30px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 60vh;
+  height: 71vh;
+  background-color: rgb(255, 255, 255);
+}
+.contactBox.active{
+  transform: translate(0);
+  transition: 0.3s;
+  opacity: 1;
+}
+.contactBox h1{
+  font-size:24px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+.closeBtnDiv{
+ position: absolute;
+ top: 10;
+ right:10;
+ cursor: pointer;
+ height: 50px;
+ width: 50px;
+
+}
+.closeBtn{
+  left: 0;
+  top: 22;
+  margin: auto;
+  right: 0;
+  display: block;
+  position: absolute;
+  width: 30px;
+  transform: rotate(45deg);
+  content: '';
+  background-color: black;
+  color: black;
+  height: 3px;
+  cursor: pointer;
+}
+.closeBtn2{
+  left: 0;
+  top: 22;
+  margin: auto;
+  right: 0;
+  display: block;
+  position: absolute;
+  width: 30px;
+  transform: rotate(135deg);
+  content: '';
+  background-color: black;
+  color: black;
+  height: 3px;
+  cursor: pointer;
+}
+
+.contactBox form{
+  display: grid;
+  gap:50px;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+.contactBox form input{
+  height: 40px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+
+  padding: 0 10px;
+  font-size: 15px;
+  width: 47vh;
+  outline: none;
+}
+.contactBox button{
+  width: 150px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #52f871;
+  font-size: 20px;
+  height: 40px;
+ left: 0;
+ right: 0;
+ margin: auto;
 }
 
 /* ====================KeyFrames==================== */
@@ -311,9 +448,11 @@ display: none;
     margin-top: -100px;
   }
   .text p {
+    margin-top: 10px;
     font-size: 11px;
   }
   .text h4 {
+    margin-top: 0px;
     font-size: 20px;
   }
   .auto-type{

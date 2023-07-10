@@ -35,13 +35,17 @@ body {
   align-items: center;
   animation: dropDown 0.7s;
   background-color: #e7f5ff00;
+  
 }
 
 .header .logoText {
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
+ 
 }
+
+
 .navbar-list li:nth-child(4){
   display: none;
 }
@@ -137,8 +141,9 @@ transition: 0.3s;
   margin-top: 50px;
   z-index: -1;
   position: absolute;
+  animation: ballBounce  2s infinite;
   border-radius: 50%;
-  animation: 1s popUp;
+transition: 1s;
   box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
 -webkit-box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
 -moz-box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
@@ -462,9 +467,38 @@ opacity: 0;
     transform: translate(0);
     opacity: 1;
   }
+  
 }
+@keyframes logoDrop {
+  0%{
+    transform: translateY(-500px);
+opacity: 0;
 
+  }
+50%{
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0.5;
+}
+  100%{
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes ballBounce {
+  0%{transform: translateY(100px);
+    width: 33 0px;}
+  
+   50%{transform: translateY(-100px);
+  
+ }
+      100%{
+        transform: translateY(100px);
+      
+      }
+        
 
+}
 /* ==============Responsive Codes ============= */
 
 /* 980px  */

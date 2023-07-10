@@ -39,8 +39,35 @@ body {
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
+display: flex;
+width: 500px;
+}
+.log1{
+ display:inline-block;
+  width: 17px;
+  transform: rotate(45deg);
+  content: '';
+  background-color: rgb(38, 63, 84);
+ 
+  height: 3px;
+  cursor: pointer;
+  margin-bottom: 7px;
+  animation:rotate 2s infinite;
  
 }
+.log2{
+  margin-left: -24.5px;
+  margin-bottom: 7px;
+    display: inline-block;
+    width: 17px;
+    transform: rotate(135deg);
+    content: '';
+    background-color: rgb(38, 63, 84);
+    height: 3px;
+    cursor: pointer;
+    animation:rotate 2s infinite;
+   
+  }
 
 
 .navbar-list li:nth-child(4){
@@ -140,7 +167,8 @@ height: auto;
   margin-top: 50px;
   z-index: -1;
   position: absolute;
-  animation: ballBounce  2s infinite;
+  animation: ballBounce  3s infinite;
+  
   border-radius: 50%;
 transition: 1s;
   box-shadow: 0px 1px 183px 21px rgba(33,118,142,1);
@@ -202,7 +230,9 @@ animation: slide;
   margin-top: 25px;
   font-size: 26px;
   animation: slideRight 1.8s ;
+
 }
+
 .socials i:hover{
 transform: rotate(360deg);
 
@@ -416,8 +446,25 @@ font-weight: 600;
   margin-top: 20px;
   font-size: 20px;
 }
+
+
 /* ====================KeyFrames==================== */
 
+  
+
+@keyframes rotate {
+  0%{
+    rotate: 10deg;
+    
+  }
+  50%{
+    rotate: 180deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+  
+}
 @keyframes popUp {
   0%{
     scale: 0;
@@ -639,12 +686,13 @@ opacity: 0;
     font-size: 16px;
   }
   .about-col-1 img{
-    width: 100%;
+    width: 80%;
     border-radius: 30px;
 
   }
   .title{
     font-size: 30px;
+    text-align: center;
   }
 
   .aboutSection{

@@ -29,7 +29,7 @@
                         <a class="navbar-link" href="#">Services</a>
                     </li>
                     <li>
-                        <a class="navbar-link" href="#">Contact</a>
+                        <a id="mblContactBtn" class="navbar-link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -121,12 +121,11 @@
                 <div class="about-col-2">
                     <h1 class="title">About Me</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        I am a beginner developer trying to spread my hands at everything possible gradually.
+                      At my current state, I am acheiving for web, mobile and desktop development. With gradual increase
+                      in number of people attracted towards developer title, I am also targeting as a DevOps Engineer to grab
+                      the opportunity. My skills, qualification and experience can be learned below, else you can contact me through
+                      email and number provided or from the contact button in the website. Thank you for your time and visit to my website.
                     </p>
                 </div>
             </div>
@@ -135,7 +134,21 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script src="https://kit.fontawesome.com/eac1eb5eeb.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
         <script src="JS/main.js"></script>
+        <script>
+
+$(window).scroll(function () {
+  if ($(window).scrollTop()) {
+    $("header").addClass("scroll");
+    $(mainContent).addClass("scroll");
+  }else{
+    $("header").removeClass("scroll");
+    $(mainContent).removeClass("scroll");
+
+  }
+});
+        </script>
         <script>
             var typed = new Typed(".auto-type",{
         strings: ["Hello" ,"Bonjour","Zdravstvuyte","Nǐn hǎo","Salve","Konnichiwa","Olá","Namaste","Shalom","Hola"],

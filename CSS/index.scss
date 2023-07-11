@@ -25,9 +25,9 @@ body {
 
 .header {
   padding: 0 2.8rem;
-
   height: 7rem;
   display: flex;
+  width:auto  ;
   justify-content: space-between;
   align-items: center;
   animation: dropDown 0.7s;
@@ -40,7 +40,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 display: flex;
-width: 500px;
+width:auto;
 }
 .log1{
  display:inline-block;
@@ -129,6 +129,7 @@ width: 500px;
   list-style-type: none;
   transition: 0.3s; 
 }
+
 .contactBtn button{
   border: none;
   list-style-type: none;
@@ -149,6 +150,36 @@ transition: 0.3s;
   box-shadow: 0 0 12px rgb(170, 170, 170);
   
 }
+
+
+ /* width */
+ ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+} 
+
+
+
+
+
+
+
+
+
 .mainContent{
   
 height: auto;
@@ -337,10 +368,17 @@ textarea {
  top: 10;
  right:10;
  cursor: pointer;
- height: 50px;
- width: 50px;
+ height: 48px;
+ width: 45px;
+ border-radius: 50%;
+ transition: 0.7s;
 
 }
+  .closeBtnDiv:hover{
+    transform: rotate(90deg);
+    transition: 0.5s;
+    scale: 1.07;
+  }
 .closeBtn{
   left: 0;
   top: 22;
@@ -351,7 +389,7 @@ textarea {
   width: 30px;
   transform: rotate(45deg);
   content: '';
-  background-color: black;
+  background-color: rgba(220, 20, 60, 0.7);
   color: black;
   height: 3px;
   cursor: pointer;
@@ -366,7 +404,7 @@ textarea {
   width: 30px;
   transform: rotate(135deg);
   content: '';
-  background-color: black;
+  background-color: rgba(220, 20, 60, 0.7) ;
   color: black;
   height: 3px;
   cursor: pointer;

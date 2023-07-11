@@ -33,14 +33,16 @@ top: 0;
   justify-content: space-between;
   align-items: center;
   animation: dropDown 0.7s;
-  transition: 1s;
+  transition: 0.5s;
 
   
 }
 .header.scroll{
-  transition: 1s;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(100px);
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.3)  ;
+  backdrop-filter:blur(30px);
+  //background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  //backdrop-filter: blur(100px);
  
   position: fixed; 
 

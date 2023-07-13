@@ -110,12 +110,15 @@ width:auto;
   border-bottom: solid 2px rgb(72, 72, 72);
 }
 
-.navbar-link:hover,
-.navbar-link:active {
+.navbar-link:hover {
   color: #aeaeae;
   border-radius:10px;
   scale: 1.1;
  
+}
+.navbar-link:active{
+  transition: 10s;
+  background-color: red;
 }
 .navbar-link::after{
   content: '';
@@ -357,7 +360,7 @@ textarea {
   position: absolute; 
   text-align: center;
   padding:40px;
-  top: 140;
+  top: 120;
   border-radius: 30px;
   left: 0; 
   right: 0; 
@@ -429,7 +432,7 @@ textarea {
 
 .contactBox form{
   display: grid;
-  gap:50px;
+  gap: 25px;
   justify-content: center;
   margin-top: 50px;
   
@@ -738,8 +741,8 @@ opacity: 0;
     margin: 1px;
   }
 
-  .contactBox textarea{
-    width: 80%;
+  textarea{
+    width: 100%;
     left: 0;
     right: 0;
     margin:auto ;

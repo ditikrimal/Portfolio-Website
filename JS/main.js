@@ -17,13 +17,9 @@ closeBtn.addEventListener("click", () => {
 const toggleNavbar = () => {
   nav_header.classList.toggle("active");
 };
-const scrollHeader = () => {};
-// window.addEventListener("scroll", function () {
-//   nav_header.classList.add("scroll", window.scrollY > 100);
-//   mainContent.classList.add("scroll", window.scrollY > 100);
-// });
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
 mblContactBtn.addEventListener("click", () => {
   contactBox.classList.toggle("active");
+  nav_header.classList.toggle("active");
 });

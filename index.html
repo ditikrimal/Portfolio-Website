@@ -185,10 +185,13 @@ $(window).scroll(function () {
     // +
     // "<b>Message: </b>" + document.getElementById("message").value + "</p>"
 }).then(
-    message=> swal("Message Sent Successfully!")
+    swal({icon: "success",text:"Message Sent Successfully!"})
+.then((value) => {
+    contactBox.classList.toggle("active") ;
+})
   
 );
-            ;
+
 }
         </script>
         <script>

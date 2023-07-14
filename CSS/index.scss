@@ -25,10 +25,9 @@ body {
 
 .header {
   padding: 0 12.4rem;
-top: 0;
+  top: 0;
   height: 7rem;
   display: flex;
-  
   width:100%  ;
   justify-content: space-between;
   align-items: center;
@@ -357,7 +356,7 @@ textarea {
   transition: 0.3s;
  scale: 0;
   opacity: 0;
-  position: absolute; 
+  position: fixed; 
   text-align: center;
   padding:40px;
   top: 120;

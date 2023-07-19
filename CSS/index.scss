@@ -518,25 +518,31 @@ width: 100%;
   width: 100%;
   margin-top:20px;
   padding: 10px;
-  box-shadow: 2px 2px 2px -1.2px rgba(0,0,0,1.5);
 
 }
-.accordion li:hover{
-  cursor: pointer;
-  scale: 1.05;
-}
+
 .accordion li label{
+  transition: 0.5s;
+  text-transform: uppercase;
+color: #8bcddf;
   padding: 10px;
- font-size: 18px;
+ font-size: 22px;
+ font-weight: 600;
   display: flex;
   align-items: center;
 }
 .accordion li label:hover{
+  transition: 0.5s;
   cursor: pointer;
+  scale: 1.1;
+
 }
 
 label::before{
-content: "+";
+  color: white;
+
+content: url(/arrow.svg);
+transition: 0.7s;
   margin-right: 10px;
   font-weight: 600;
 
@@ -547,30 +553,35 @@ input[type="radio"]{
 
 }
 .accordion .content{
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
   padding: 0 10p;
   max-height: 0;
   overflow: hidden;
   transition: 0.2s;
-  line-height: 26px;
   transition: 0.7s;
 
 }
 .accordion span{
-  font-size: 15px;
-  padding: 30px;
+  font-size: 18px;
+  padding: 3px;
 
 }
 
 .accordion input[type=radio]:checked + label + .content{
   transition: 1.4s;
-
   overflow: visible;
   max-height: 500px;
 
 
 }
+.accordion input[type=radio]:checked + label{
+scale: 1.1;
+}
 .accordion input[type=radio]:checked + label::before {
-content: "-";
+transform: rotate(90deg);
+transition: 0.7s;
 
 
 }

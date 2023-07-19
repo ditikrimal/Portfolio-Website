@@ -171,16 +171,19 @@ transition: 0.3s;
  /* width */
  ::-webkit-scrollbar {
   width: 5px;
+  
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f100;
+  border-radius: 20px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #555;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
@@ -503,8 +506,61 @@ font-weight: 600;
   margin-top: 20px;
   font-size: 20px;
 }
+.tabs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dropDown{
+  font-size: 16px;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  gap:10px;
+  margin-left: 25px;
+display: none;
+transition: 1s;
+  margin-top: -100px;
+  position: absolute;
+}
 
-
+.dropDown.active{
+  display: flex;
+  transition: 1s ;
+  color: white;
+  margin-top: 20px;
+  opacity: 1;
+  position: relative;
+}
+.tabs h1:hover{
+  cursor: pointer;
+  scale: 1.03;
+  transition: 0.5s;
+}
+.tabs h1{
+  border-left:solid 2px rgba(56, 83, 107, 0.625);
+  transition: 0.5s;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+.fa-solid{
+  font-size: 19px;
+  margin: 3px;
+  transition: 0.1s;
+}
+.fa-solid.active{
+  transition: 0.5s;
+  transform: rotate(90deg);
+}
+.skillsTab{
+  transition: 1s;
+}
+.experienceTab{
+  transition: 1s;
+}.qualificationTab{
+  transition: 1s;
+}
 /* ====================KeyFrames==================== */
 
   

@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
 * {
   padding: 0;
   margin: 0;
@@ -196,7 +199,7 @@ transition: 0.3s;
 
 
 
-
+/* Landing Page hero Section*/
 
 
 .mainContent{
@@ -473,7 +476,12 @@ textarea {
   color:black;
   transition: 0.5s;
 }
+/* Landing Page hero Section*/
 
+
+
+
+/*About Section*/
 .aboutSection{
   padding: 80px 80px ;
   height: auto;
@@ -500,8 +508,10 @@ flex-wrap:wrap ;
  
 }
 .title{
+  font-family: 'Bree Serif', serif;
+letter-spacing: 3.5px;
   font-size: 40px;
-font-weight: 600;
+font-weight: 500;
 }
 .about-col-2 p{
   margin-top: 20px;
@@ -590,6 +600,101 @@ transition: 0.7s;
 
 
 }
+/*About Section*/
+
+
+
+
+
+
+/*My Services Section*/
+.myServices{
+  padding: 80px 50px ;
+  height: 100vh;
+  color: white;
+  justify-content: right;
+  background: linear-gradient(180deg,rgb(33, 54, 63), rgb(53, 70, 88),rgba(89, 125, 161, 0.684) );
+ 
+}
+.myServices h1{
+  text-align: center;
+font-size: 40px;
+font-weight: 500;
+font-family: 'Bree Serif', serif;
+letter-spacing: 3.5px;
+}
+
+.serviceRow{
+  padding: 5%;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  gap: 5%;
+}
+.serviceRow h1{
+  padding: 40px 0;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.service-1{
+  border-radius: 20px;
+  background: url(/UIUX.webp);
+  background-size: 550px;
+  flex-basis: 40%;
+  transition: 0.7s;
+}
+.service-1:hover{
+  cursor: pointer;
+  scale: 1.07;
+  transition: 0.7s;
+  box-shadow: 20px 20px 20px -12px rgb(0, 0, 0);
+
+}
+.overlay{
+  transition: 1s;
+border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+ 
+}
+.service-1:hover .overlay{
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.service-2{
+  border-radius: 20px;
+  background: url(/FULLSTACK.jpg);
+  background-size: 550px;
+  flex-basis: 40%;
+  transition: 0.7s;
+}
+.service-2:hover{
+  cursor: pointer;
+  scale: 1.07;
+  transition: 0.7s;
+  box-shadow: 20px 20px 20px -12px rgb(0, 0, 0);
+}
+.service-2:hover .overlay{
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.service-3{
+  background-color: green;
+  flex-basis: 40%;
+}
+
+
+
+
+
+/*My Services Section*/
 
 
 /* ====================KeyFrames==================== */
@@ -864,6 +969,16 @@ opacity: 0;
   .aboutSection{
     
     background: linear-gradient(180deg, rgb(33, 39, 43,0),rgba(33, 37, 41, 0.684), rgb(33, 54, 63));
+  }
+  .myServices{
+    padding: 40px 40px;
+
+  }
+  .serviceRow{
+
+    display: grid;
+    gap: 30px;
+
   }
 }
 

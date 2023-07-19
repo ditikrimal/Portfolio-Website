@@ -496,6 +496,7 @@ flex-wrap:wrap ;
 }
 .about-col-2{
   flex-basis:60% ;
+  text-align: justify ;
  
 }
 .title{
@@ -506,61 +507,69 @@ font-weight: 600;
   margin-top: 20px;
   font-size: 20px;
 }
-.tabs{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.dropDown{
-  font-size: 16px;
-  display: flex;
-  opacity: 0;
-  flex-direction: column;
-  gap:10px;
-  margin-left: 25px;
-display: none;
-transition: 1s;
-  margin-top: -100px;
-  position: absolute;
+.accordion{
+width: 100%;
+
+
 }
 
-.dropDown.active{
+.accordion li {
+  padding-bottom  : 20px;
+  width: 100%;
+  margin-top:20px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px -1.2px rgba(0,0,0,1.5);
+
+}
+
+.accordion li label{
+  padding: 10px;
+ font-size: 18px;
   display: flex;
-  transition: 1s ;
-  color: white;
-  margin-top: 20px;
-  opacity: 1;
-  position: relative;
+  align-items: center;
 }
-.tabs h1:hover{
-  cursor: pointer;
-  scale: 1.03;
-  transition: 0.5s;
+
+label::before{
+content: "+";
+  margin-right: 10px;
+  font-weight: 600;
+
 }
-.tabs h1{
-  border-left:solid 2px rgba(56, 83, 107, 0.625);
-  transition: 0.5s;
-  color: white;
-  font-weight: 500;
-  font-size: 22px;
+
+input[type="radio"]{
+   display: none;
+
 }
-.fa-solid{
-  font-size: 19px;
-  margin: 3px;
-  transition: 0.1s;
+.accordion .content{
+  padding: 0 10p;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s;
+  line-height: 26px;
+  transition: 0.7s;
+
 }
-.fa-solid.active{
-  transition: 0.5s;
-  transform: rotate(90deg);
+.accordion span{
+  font-size: 15px;
+  padding: 30px;
+
 }
-.skillsTab{
-  transition: 1s;
+
+.accordion input[type=radio]:checked + label + .content{
+  transition: 1.4s;
+
+  overflow: visible;
+  max-height: 500px;
+
+
 }
-.experienceTab{
-  transition: 1s;
-}.qualificationTab{
-  transition: 1s;
+.accordion input[type=radio]:checked + label::before {
+content: "-";
+
+
 }
+
+
 /* ====================KeyFrames==================== */
 
   

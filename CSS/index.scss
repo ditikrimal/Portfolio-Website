@@ -523,6 +523,7 @@ width: 100%;
 
 .accordion li label{
   transition: 0.5s;
+  border-left: 1px solid grey;
   text-transform: uppercase;
 color: #8bcddf;
   padding: 10px;
@@ -565,6 +566,7 @@ input[type="radio"]{
 }
 .accordion span{
   font-size: 18px;
+
   padding: 3px;
 
 }
@@ -578,9 +580,12 @@ input[type="radio"]{
 }
 .accordion input[type=radio]:checked + label{
 scale: 1.1;
+color: grey;
 }
 .accordion input[type=radio]:checked + label::before {
 transform: rotate(90deg);
+
+
 transition: 0.7s;
 
 

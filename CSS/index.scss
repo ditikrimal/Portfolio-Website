@@ -521,12 +521,18 @@ width: 100%;
   box-shadow: 2px 2px 2px -1.2px rgba(0,0,0,1.5);
 
 }
-
+.accordion li:hover{
+  cursor: pointer;
+  scale: 1.05;
+}
 .accordion li label{
   padding: 10px;
  font-size: 18px;
   display: flex;
   align-items: center;
+}
+.accordion li label:hover{
+  cursor: pointer;
 }
 
 label::before{

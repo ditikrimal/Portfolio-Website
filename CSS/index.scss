@@ -552,7 +552,7 @@ color: #8bcddf;
 label::before{
   color: white;
 
-content: url(/arrow.svg);
+content: url(/Images/arrow.svg);
 transition: 0.7s;
   margin-right: 10px;
   font-weight: 600;
@@ -646,7 +646,7 @@ height: auto;
 .service-1{
   height:auto;
   border-radius: 20px;
-  background: url(/UIUX.webp);
+  background: url(/Images/UIUX.webp);
   background-size: 550px;
   flex-basis: 40%;
   transition: 0.7s;
@@ -687,7 +687,7 @@ font-weight: 500;
 }
 .service-2{
   border-radius: 20px;
-  background: url(/FULLSTACK.jpg);
+  background: url(/Images/FULLSTACK.jpg);
   background-size: 550px;
   flex-basis: 40%;
   transition: 0.7s;

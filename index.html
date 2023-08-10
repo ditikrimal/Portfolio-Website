@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ditik Rimal</title>
         <link rel="icon" type="image/x-icon" href="Icon.ico">
-        <link rel="stylesheet" href="CSS/index.scss">
+        <link rel="stylesheet" href="/CSS/index.scss">
     </head>
     <body>
         <header id="header" class="header">
@@ -132,7 +132,14 @@
                         <div class="skillsTab">
                             <ul class="accordion">
                                 <li>
-                                    <input type="radio" name="accordion" id="first">
+                                    <input
+                                        class="dropDownInput"
+                                        type="radio"
+                                        name="accordion"
+                                        id="first"
+                                        value="1"
+                                        checked
+                                    >
                                     <label for="first">Skills</label>
                                     <div class="content">
                                         <span style="color: rgb(242, 106, 45);">
@@ -151,7 +158,7 @@
                                         </span>
                                         <br>
                                         <span style="color: rgb(94, 121, 188);">
-                                            - PHP
+                                            - PHP with Laravel
                                             <i class="fa-brands fa-php"></i>
                                         </span>
                                         <br>
@@ -161,7 +168,13 @@
                                         </span>
                                     </div>
                                     <li>
-                                        <input type="radio" name="accordion" id="second">
+                                        <input
+                                            class="dropDownInput"
+                                            type="radio"
+                                            name="accordion"
+                                            id="second"
+                                            value="2"
+                                        >
                                         <label for="second">Experience</label>
                                         <div class="content">
                                             <h1>2022-Current</h1>
@@ -171,7 +184,13 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <input type="radio" name="accordion" id="third">
+                                        <input
+                                            class="dropDownInput"
+                                            type="radio"
+                                            name="accordion"
+                                            id="third"
+                                            value="3"
+                                        >
                                         <label for="third">Qualification</label>
                                         <div class="content">
                                             <h1>2020-2022</h1>
@@ -238,6 +257,7 @@ $(window).scroll(function () {
 });
         </script>
         <script>
+            
             function sendEmail(){
             Email.send({
     SecureToken:"43f3ee1f-4ff5-4750-9fdf-3826c442081f",

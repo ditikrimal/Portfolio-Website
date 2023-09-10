@@ -33,6 +33,7 @@ body {
   align-items: center;
   animation: dropDown 0.7s;
   transition: 0.5s;
+  z-index: 999;
 }
 .header.scroll {
   transition: 0.5s;
@@ -56,14 +57,13 @@ body {
   transform: rotate(45deg);
   content: "";
   background-color: rgb(255, 255, 255);
-
   height: 3px;
   cursor: pointer;
   margin-bottom: 7px;
   animation: rotate 2s infinite;
 }
 .log2 {
-  margin-left: -24.5px;
+  margin-left: -24px;
   margin-bottom: 7px;
   display: inline-block;
   width: 17px;
@@ -90,7 +90,6 @@ body {
 .navbar-link:visited {
   display: inline-block;
   text-transform: uppercase;
-
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 1.5rem;
@@ -483,6 +482,7 @@ textarea {
   font-size: 18px;
   margin-bottom: 20px;
 }
+
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -503,7 +503,7 @@ textarea {
   position: relative;
   margin-top: 4px;
   border-radius: 3px;
-  background-color: rgb(214, 61, 61);
+  background-color: #3687d3;
   height: 100%;
   animation: 5s progressBar;
 }
@@ -550,96 +550,136 @@ textarea {
 }
 .myServices h1 {
   text-align: center;
-  font-size: 40px;
+  padding: 10px;
+  font-size: 30px;
   font-weight: 500;
-  letter-spacing: 3.5px;
+  letter-spacing: 2px;
+  background-color: #24303a;
+  border-radius: 10px;
+  text-transform: uppercase;
 }
+.myServices h2 {
+  color: #d5d5d5;
 
+  padding: 15px;
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+}
 .serviceRow {
-  padding: 5%;
+  padding: 2% 0px;
   display: flex;
   height: auto;
   width: 100%;
   flex-direction: row;
   gap: 3%;
+  display: flex;
+  justify-content: space-evenly;
 }
-.serviceRow h1 {
-  padding: 40px 0 140px 0;
-  color: white;
+.serviceRow .service {
+  position: relative;
+  padding: 20px 0px;
+  flex-basis: 25%;
+  height: 40vh;
+  transition: 0.7s;
+  border-radius: 10px;
+}
+.service:hover {
+  background-color: rgba(126, 126, 126, 0.305);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+.icon {
+  text-align: center;
+}
+.icon i {
+  font-size: 40px;
+  color: rgb(133, 169, 214);
+}
+.icon span {
+  font-size: 20px;
+}
+.service p {
+  color: #aeaeae;
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+}
+/*My Services Section*/
+/* Footer Styling*/
+footer {
+  background-color: rgb(50, 50, 50);
+  height: auto;
   width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 0;
+  padding: 20px;
+}
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.footerRow {
+  display: flex;
+  padding: 20px 100px;
+  justify-content: space-around;
+}
+.socialsParent {
+  flex-basis: 30%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.footerSocials,
+.footerSocials a {
+  color: white;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  gap: 40px;
+}
+.socialContent {
+  color: #aaaaaa;
+  text-align: center;
+  font-size: 13px;
+}
+.contactFooter {
+  flex-basis: 30%;
+  color: white;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contactFooter span i {
+  margin-right: 5px;
+  font-size: 15px;
+  padding: 10px;
+  background-color: rgb(32, 82, 103);
+  border-radius: 50%;
+}
+.contactFooter span {
+  align-self: center;
+  font-size: 15px;
+}
+.footerCenter {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-basis: 30%;
   font-size: 22px;
   font-weight: 600;
-  opacity: 1;
-  z-index: 999;
+  letter-spacing: 1px;
 }
-.service-1 {
-  height: auto;
-  border-radius: 20px;
-  background: url(/Images/UIUX.webp);
-  background-size: 550px;
-  flex-basis: 40%;
-  transition: 0.7s;
+.copyRight {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
 }
-.service-1:hover {
-  cursor: pointer;
-  scale: 1.07;
-  transition: 0.7s;
-  box-shadow: 20px 20px 20px -12px rgb(0, 0, 0);
-}
-
-.overlay {
-  transition: 1s;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  opacity: 0;
-}
-.overlay span {
-  font-size: 16px;
-  padding-top: 100px;
-  margin-left: 10px;
-  border-bottom: 2px solid crimson;
-  font-weight: 500;
-  padding-bottom: 7px;
-}
-.overlay p {
-  color: white;
-  font-weight: 00;
-  padding: 30px 10px 20px 10px;
-  font-size: 16px;
-}
-.service-1:hover .overlay {
-  transition: 1s;
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.service-2 {
-  border-radius: 20px;
-  background: url(/Images/FULLSTACK.jpg);
-  background-size: 550px;
-  flex-basis: 40%;
-  transition: 0.7s;
-}
-.service-2:hover {
-  cursor: pointer;
-  scale: 1.07;
-  transition: 0.7s;
-  box-shadow: 20px 20px 20px -12px rgb(0, 0, 0);
-}
-.service-2:hover .overlay {
-  transition: 1s;
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.service-3 {
-  background-color: green;
-  flex-basis: 40%;
-}
-
-/*My Services Section*/
+/* Footer Styling*/
 
 /* ====================KeyFrames==================== */
 
@@ -939,6 +979,16 @@ textarea {
   }
   .serviceRow h1 {
     padding: 40px 0 80px 0;
+  }
+  .footerRow {
+    display: grid;
+    gap: 30px;
+  }
+  .contactFooter span {
+    align-self: center;
+  }
+  .footerCenter {
+    display: none;
   }
 }
 

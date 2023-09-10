@@ -316,6 +316,7 @@ textarea {
   outline: none;
 }
 .contactBox {
+  z-index: 999;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -537,7 +538,7 @@ textarea {
 
 /*My Services Section*/
 .myServices {
-  padding: 80px 50px;
+  padding: 80px 50px 0px 50px;
   height: auto;
   color: white;
   justify-content: right;
@@ -613,8 +614,8 @@ textarea {
 }
 /*My Services Section*/
 /* Projects Styling*/
-.portfolio {
-  height: 100vh;
+.projects {
+  height: 60vh;
   padding: 70px 25px;
   background: linear-gradient(
     180deg,
@@ -623,7 +624,7 @@ textarea {
     #212529
   );
 }
-.portfolio h1 {
+.projects h1 {
   color: whitesmoke;
   text-transform: uppercase;
   margin-top: 20px;
@@ -631,7 +632,7 @@ textarea {
   font-size: 30px;
   position: relative;
 }
-.portfolio h1::after {
+.projects h1::after {
   content: "";
   width: 43%;
   margin-top: 20px;
@@ -640,7 +641,7 @@ textarea {
   background-color: rgba(144, 214, 255, 0.301);
   position: absolute;
 }
-.portfolio h1::before {
+.projects h1::before {
   content: "";
   width: 43%;
   margin-top: 20px;
@@ -648,6 +649,12 @@ textarea {
   height: 5px;
   background-color: rgba(144, 214, 255, 0.301);
   position: absolute;
+}
+.projects div {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  color: crimson;
 }
 /* Projects Styling*/
 

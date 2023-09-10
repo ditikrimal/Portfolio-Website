@@ -613,7 +613,7 @@ textarea {
 /*My Services Section*/
 /* Footer Styling*/
 footer {
-  background-color: rgb(50, 50, 50);
+  background-color: #212529;
   height: auto;
   width: 100%;
   padding: 20px;
@@ -666,17 +666,50 @@ footer {
   align-self: center;
   font-size: 15px;
 }
-.footerCenter {
-  color: white;
+.footerCenter h1 {
+  color: #9c9c9c;
   display: flex;
   justify-content: center;
   flex-basis: 30%;
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 1px;
+  z-index: 9;
+  position: relative;
+}
+.footerCenter h1::before {
+  content: "";
+  z-index: -1;
+  width: 22%;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  margin-top: 15.5px;
+  background-color: #3c89ab;
+}
+.footerCenter h1::after {
+  content: "";
+  z-index: -1;
+  width: 22%;
+  position: absolute;
+  right: 0;
+
+  height: 3px;
+  margin-top: 15.5px;
+  background-color: #3c89ab;
+}
+.footerCenter h1 span {
+  color: #b01b1d;
+  margin-left: 10px;
+}
+.footerCenter p {
+  color: #3c89ab;
+  font-size: 15px;
+  text-align: center;
 }
 .copyRight {
   display: flex;
+  color: whitesmoke;
   justify-content: center;
   font-size: 13px;
 }
@@ -979,19 +1012,20 @@ footer {
     display: grid;
     gap: 40px;
   }
-
+  footer {
+    padding-top: 35px;
+  }
   .serviceRow h1 {
     padding: 40px 0 80px 0;
   }
   .footerRow {
     display: grid;
+    width: 100%;
+    padding: 0;
     gap: 30px;
   }
   .contactFooter span {
     align-self: center;
-  }
-  .footerCenter {
-    display: none;
   }
 }
 

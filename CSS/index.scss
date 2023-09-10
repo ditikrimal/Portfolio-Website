@@ -577,12 +577,14 @@ textarea {
   justify-content: space-evenly;
 }
 .serviceRow .service {
-  position: relative;
   padding: 20px 0px;
   flex-basis: 25%;
-  height: 40vh;
+  min-height: 35vh;
+  height: auto;
   transition: 0.7s;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .service:hover {
   background-color: rgba(126, 126, 126, 0.305);
@@ -606,8 +608,7 @@ textarea {
   font-size: 15px;
   text-align: center;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
+  padding-bottom: 20px;
 }
 /*My Services Section*/
 /* Footer Styling*/
@@ -958,6 +959,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
+
   .skillTitle {
     font-size: 15px;
   }
@@ -975,8 +977,9 @@ footer {
   .serviceRow {
     margin-top: 20px;
     display: grid;
-    gap: 30px;
+    gap: 40px;
   }
+
   .serviceRow h1 {
     padding: 40px 0 80px 0;
   }

@@ -3,7 +3,7 @@ const nav_header = document.querySelector(".header");
 
 const contactBtn = document.querySelector(".contactBtn");
 const mblContactBtn = document.getElementById("mblContactBtn");
-const navBtns = document.querySelector(".navbar-link");
+const navBtns = document.querySelectorAll(".navbar-link");
 const mainContent = document.querySelector(".mainContent");
 const contactBox = document.querySelector(".contactBox");
 const closeBtn = document.querySelector(".closeBtnDiv");
@@ -24,3 +24,4 @@ mblContactBtn.addEventListener("click", () => {
   contactBox.classList.toggle("active");
   nav_header.classList.toggle("active");
 });
+navBtns.forEach((btn) => btn.addEventListener("click", () => toggleNavbar()));

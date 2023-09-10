@@ -544,11 +544,12 @@ textarea {
   background: linear-gradient(
     180deg,
     rgb(33, 54, 63),
-    rgb(53, 70, 88),
-    rgba(89, 125, 161, 0.684)
+    rgb(41, 55, 69),
+    rgba(61, 89, 116, 0.684)
   );
 }
 .myServices h1 {
+  margin-top: 35px;
   text-align: center;
   padding: 10px;
   font-size: 30px;
@@ -611,6 +612,24 @@ textarea {
   padding-bottom: 20px;
 }
 /*My Services Section*/
+/* Projects Styling*/
+.portfolio {
+  height: 100vh;
+  padding: 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(61, 89, 116, 0.684),
+    rgb(33, 54, 63),
+    #212529
+  );
+}
+.portfolio h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+/* Projects Styling*/
+
 /* Footer Styling*/
 footer {
   background-color: #212529;
@@ -958,6 +977,9 @@ footer {
   .aboutRow {
     display: grid;
     gap: 20px;
+  }
+  .title {
+    margin-top: 20px;
   }
   .about-col-1 {
     display: flex;

@@ -1,27 +1,32 @@
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
-const nav_header = document.querySelector(".header");
-
-const contactBtn = document.querySelector(".contactBtn");
+const mobileNav = document.querySelector(".mobile-navbar-btn");
+const navHeader = document.querySelector(".header");
+const contactBox = document.querySelector(".contactBox");
+const closeBtnDiv = document.querySelector(".closeBtnDiv");
+const mainContent = document.querySelector(".mainContent"); 
+const contactBtn = document.querySelector(".contactBtn"); 
 const mblContactBtn = document.getElementById("mblContactBtn");
 const navBtns = document.querySelectorAll(".navbar-link");
-const mainContent = document.querySelector(".mainContent");
-const contactBox = document.querySelector(".contactBox");
-const closeBtn = document.querySelector(".closeBtnDiv");
 
-contactBtn.addEventListener("click", () => {
-  contactBox.classList.toggle("active");
-});
-closeBtn.addEventListener("click", () => {
-  contactBox.classList.toggle("active");
-});
 
 const toggleNavbar = () => {
-  nav_header.classList.toggle("active");
+  navHeader.classList.toggle("active");
 };
 
-mobile_nav.addEventListener("click", () => toggleNavbar());
-mblContactBtn.addEventListener("click", () => {
+mobileNav.addEventListener("click", toggleNavbar);
+
+// Function to handle the contact box and navbar toggling
+const handleContactToggle = () => {
   contactBox.classList.toggle("active");
-  nav_header.classList.toggle("active");
+  navHeader.classList.toggle("active");
+};
+
+contactBtn.addEventListener("click", handleContactToggle);
+closeBtnDiv.addEventListener("click", handleContactToggle);
+mblContactBtn.addEventListener("click", handleContactToggle);
+
+// Event delegation for navigation buttons
+mainContent.addEventListener("click", (event) => {
+  if (event.target.classList.contains("navbar-link")) {
+    toggleNavbar();
+  }
 });
-navBtns.forEach((btn) => btn.addEventListener("click", () => toggleNavbar()));

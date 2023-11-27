@@ -2,11 +2,10 @@ const mobileNav = document.querySelector(".mobile-navbar-btn");
 const navHeader = document.querySelector(".header");
 const contactBox = document.querySelector(".contactBox");
 const closeBtnDiv = document.querySelector(".closeBtnDiv");
-const mainContent = document.querySelector(".mainContent"); 
-const contactBtn = document.querySelector(".contactBtn"); 
+const mainContent = document.querySelector(".mainContent");
+const contactBtn = document.getElementById("contactBtn");
 const mblContactBtn = document.getElementById("mblContactBtn");
 const navBtns = document.querySelectorAll(".navbar-link");
-
 
 const toggleNavbar = () => {
   navHeader.classList.toggle("active");

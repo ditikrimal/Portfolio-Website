@@ -1150,9 +1150,11 @@ footer {
     font-size: 22px;
   }
   .project-box {
-    padding: 2rem;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+  .projects {
+    padding: 0rem;
   }
 }
 

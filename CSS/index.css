@@ -331,8 +331,9 @@ textarea {
   position: fixed;
   text-align: center;
   padding: 40px;
-  top: 120;
+  top: 0;
   border-radius: 30px;
+  margin-top: 10rem;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -362,11 +363,7 @@ textarea {
   border-radius: 50%;
   transition: 0.7s;
 }
-.closeBtnDiv:hover {
-  transform: rotate(90deg);
-  transition: 0.5s;
-  scale: 1.07;
-}
+
 .closeBtn {
   left: 0;
   top: 22;
@@ -648,6 +645,7 @@ textarea {
 .project-box {
   padding: 4rem;
   display: grid;
+  gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
 .project {
@@ -664,7 +662,7 @@ textarea {
   transition: 0.3s;
 }
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: 0.3s;
 }
 .project-img {
@@ -694,11 +692,15 @@ textarea {
   text-align: center;
 }
 .project-info a {
-  color: white;
   font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
   padding: 1rem;
+}
+.project-btns {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
 }
 .project-info button {
   border: none;
@@ -706,23 +708,42 @@ textarea {
   background-color: #505050df;
   border-radius: 10px;
   height: 4.2rem;
-  width: 100%;
+  width: 90%;
   font-size: 1.5rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.6s;
   display: grid;
+  place-content: center;
 }
-.project-info button:hover {
+.project-btns a:nth-child(1) {
   color: black;
-  transition: 0.6s;
-  text-decoration: underline;
+}
+.project-btns .codebtn {
+  color: white !important;
+}
+.project-btns button:nth-child(1) {
   background-color: #ffffff;
 }
-.project-info button:hover,
-.project-info a {
-  color: black;
+.project-btns button:nth-child(2) {
+  background-color: black;
 }
+
+.project-btns button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.project-btns button:nth-child(2):hover a {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.project-btns button:nth-child(1):hover a {
+  text-decoration: underline black;
+  color: black;
+  transition: 0.3s;
+}
+
 /* Projects Styling*/
 
 /* Footer Styling*/

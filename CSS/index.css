@@ -1181,6 +1181,9 @@ footer {
     flex-direction: column;
     gap: 2rem;
   }
+  .project-btns button {
+    width: 100%;
+  }
 }
 
 /* Below 560px  */

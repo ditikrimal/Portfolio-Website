@@ -20,7 +20,9 @@ const handleContactToggle = () => {
 };
 
 contactBtn.addEventListener("click", handleContactToggle);
-closeBtnDiv.addEventListener("click", handleContactToggle);
+closeBtnDiv.addEventListener("click", () => {
+  contactBox.classList.toggle("active");
+});
 mblContactBtn.addEventListener("click", handleContactToggle);
 
 // Event delegation for navigation buttons
